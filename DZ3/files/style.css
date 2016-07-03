@@ -30,7 +30,7 @@ header .menu{
 
 .menu {
 	height: 40px;
-	padding-left: 5px;
+	/*padding-left: 5px;*/
 	margin: 0 45px 40px;
 	font-family: tahoma;
 	font-size: 14px;
@@ -59,7 +59,9 @@ header li:hover{
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
 }
-
+header li:hover:first-child {
+	border-left: 1px solid rgba(0, 0, 0, 0);
+}
 /*footer*/
 footer{
 		clear: both;
