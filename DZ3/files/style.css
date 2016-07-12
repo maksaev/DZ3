@@ -6,17 +6,22 @@ body{
 
 .container{
 	width: 1060px;
-	margin: 0 20%;
+	margin: 0 auto;
 	background-color: white;
 	box-shadow: 0 0 2px grey;
-	height: 100%;
-	position: fixed;
-
+	height: 865px;
 }
 
+li{
+	 display: inline-block;
+	 list-style: none;
+	 border: 1px solid rgba(0, 0, 0, 0);
+}
+
+/*header*/
 header img{
 	display: inline-block;
-	margin: 36px 25px 27px;
+	margin: 30px 25px 15px;
 }
 
 header .menu{
@@ -25,40 +30,41 @@ header .menu{
 
 .menu {
 	height: 40px;
-	padding: 0;
-	margin: 0 45px 45px;
+	/*padding-left: 5px;*/
+	margin: 0 45px 40px;
 	font-family: tahoma;
 	font-size: 14px;
 }
 
-li {
-	display: inline-block;
-	list-style: none;
-	border: 1px solid rgba(0, 0, 0, 0);
+.menu li{
+	width: 100px;
+	padding: 10px 0px;
+	margin-right: 20px;
+	text-align: center;
+
 }
 
-.menu a{
-	display: block;
+.menu a {
 	text-decoration: none;
-	margin: 10px 60px 10px 25px;
 }
 
-header a {
+header a{
 	text-shadow: 2px 2px 2px #303030;
 	color: white;
 	font-weight: 600;
 }
 
-.sel, header li:hover{
+header li:hover{
 	background-color: #404040;
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
 }
-
+header li:hover:first-child {
+	border-left: 1px solid rgba(0, 0, 0, 0);
+}
+/*footer*/
 footer{
-	position: absolute;
-	top: 90%;
-
+		clear: both;
 }
 
 footer .menu{
@@ -71,26 +77,26 @@ footer a, footer li{
 	font-weight: 500;
 }
 
-footer .act, footer a:hover{text-decoration: underline;}
+footer a:hover{text-decoration: underline;}
 
 footer li:last-child{
-	margin-left: 210px;
+	width: 180px;
+	float: right;
+	margin-right: 0px;
 }
 
-
+/*main*/
 main{
 	margin: 0 45px;
 	font-family: tahoma;
 	font-size: 14px;
 }
 
+/*main.left-block*/
 .left-block{
 	width: 240px;
 	margin-right: 45px;
-	margin-bottom: 300px;
 	border: 1px solid #838383;
-	clear: both;
-	position: fixed;
 	float: left;
 }
 .left-block li{
@@ -99,10 +105,14 @@ main{
 	padding: 10px 23px 0;
 	border-bottom: 1px solid #838383;
 }
+
+.left-block li:last-child{
+	border-bottom: 0;
+}
+
 .left-block li:hover{
 	background-color: #f0f0f0;
 	padding-left: 35px;
-
 }
 
 .left-block a{
@@ -110,13 +120,10 @@ main{
 	color: #4f4f4f;
 }
 
-
+/*main.right-block*/
 .right-block{
 	width: 680px;
-	position: relative;
 	float: right;
-	clear: both;
-
 }
 
 .right-block div{
@@ -125,8 +132,9 @@ main{
 
 .right-block p{
 	color: #4f4f4f;
-	padding: 25px;
-	line-height: 1.5;
+	margin-bottom: 10px;
+	padding: 20px;
+	line-height: 1.4;
 
 }
 
