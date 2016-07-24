@@ -1,0 +1,127 @@
+*{margin: 0; padding: 0; }
+
+@font-face {
+    font-family: 'helveticaneuecyr';
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+	width: 1215px;
+	margin: 0 auto;	
+	font-family: helveticaneuecyr, arial, sans-serif;
+}
+
+.menu{
+	background-color: #034987;
+	text-align: right;
+	padding-right: 16px;
+}
+
+.menu>ul>li{
+	display: inline-block;
+	list-style: none;
+	padding: 0px 12px;
+	line-height: 35px;
+	margin-left: -6px;
+
+}
+.menu a{
+	text-decoration: none; 
+	color: #63BBFF;
+	font-size: 14px;
+}
+.menu>ul>li:hover{background-color: #50ABD8;}
+.menu>ul>li:hover a{color: #fff;}
+
+.other{
+	border-left: 1px solid #56A0DD;
+	border-right: 1px solid #56A0DD;
+}
+.other a{color: #fff;}
+.other img{vertical-align: middle;}
+.other div{
+	display: inline-block;
+	margin-left: 5px;
+}
+.underline{
+	text-decoration: underline;
+}
+.other:hover{
+	background: linear-gradient(to top, #2D7CC1, #52AEDD);
+}
+
+
+main{
+	background: url(bg.jpg) no-repeat ;
+	height: 1028px;
+	padding-top: 215px;
+}
+.central{
+	margin: 0 auto;
+	width: 560px;
+}
+
+.title, .form{
+	background-color: rgba(0,0,0,0.6);
+	color: white;
+	text-align: center;
+	width: 560px;
+}
+.title{
+	height: 60px;
+	margin-bottom: 2px;	
+	line-height: 60px;
+	font-size: 24px;
+}
+.form{}
+.fb img{margin-top: 35px;}
+.ou{margin: 16px 16px 28px;}
+.ou div{
+	margin-top: -13px;
+	font-size: 14px;
+}
+
+input[placeholder]{
+	display: block;
+	background-color: #0e0e0e;
+	color: #fff;
+	width: 255px;
+	height: 30px;
+	margin: 16px auto;
+	padding-left: 18px;
+	border: 0;
+	border-bottom: 1px solid #555;
+	font-weight: bold;
+}
+input[placeholder]:focus{
+	background-color: #1B5288;
+	box-shadow: 0 0 10px #74D2ED;
+	border-bottom: 1px solid #5C9ED5;
+}
+form label{
+	font-size: 14px;
+	padding-left: 3px;
+}
+
+input:last-child{
+	background-color: #f00;
+	display: block;
+	margin: 16px auto;
+	background: linear-gradient(to top, #2D7CC1, #52AEDD);
+	color: white;
+	border: 1px solid #4089C0;
+	border-radius: 3px;
+	padding: 6px 10px;
+	font-weight: bold;
+}
+
+.form p{
+	font-size: 12px;
+	padding-bottom: 16px;
+}
