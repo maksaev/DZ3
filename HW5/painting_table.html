@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Painting-Table</title>
+</head>
+<body>
+	<div class="painting_table">
+		<table cellspacing="0">
+			<tr><!-- 1 -->
+				<td colspan="2"></td>
+				<td colspan="3"></td>
+				<td colspan="2" class="bgc1"></td>
+			</tr>
+			<tr><!-- 2 -->
+				<td rowspan="2"></td>
+				<td colspan="4" rowspan="4" class="bgc2"></td>
+				<td colspan="2" rowspan="2" class="bgc1"></td>
+			</tr>
+			<tr><!-- 3 -->
+			</tr>
+			<tr><!-- 4 -->
+				<td rowspan="3"></td>
+				<td rowspan="2"></td>
+				<td rowspan="2"></td>
+			</tr>
+			<tr><!-- 5 -->
+			</tr>
+			<tr><!-- 6 -->
+				<td colspan="2" rowspan="2" class="bgc3"></td>
+				<td colspan="2"></td>
+				<td colspan="2"></td>
+			</tr>
+			<tr><!-- 7 -->
+				<td rowspan="3" class="bgc1 bott"></td>
+				<td colspan="2"></td>
+				<td colspan="2" rowspan="2" class="bgc4"></td>
+			</tr>
+			<tr><!-- 8 -->
+				<td class="bott" colspan="2" rowspan="2"></td>
+				<td colspan="2"></td>
+			</tr>
+			<tr><!-- 9 -->
+				<td colspan="4" class="bott"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+<style>
+table{
+	border-collapse: collapse;
+}
+.painting_table{
+	border: 1px solid grey;
+	background-color: #fff;
+	margin: 100px auto;	
+	padding: 2px;
+	width: 560px;
+}
+
+td{
+	width: 75px;
+	height: 60px;
+	border: 10px solid black;
+}
+
+td[colspan="2"]{width: 150px;}
+td[colspan="3"]{width: 225px;}
+td[colspan="4"]{width: 300px;}
+td[rowspan="2"]{height: 120px;}
+td[rowspan="3"]{height: 180px;}
+td[rowspan="4"]{height: 240px;}
+
+.bgc1{background-color: yellow;}
+.bgc2{background-color: red;}
+.bgc3{background-color: black;}
+.bgc4{background-color: blue;}
+
+table tr:first-child td{border-top: none; }
+table tr td:first-child{border-left: none; }
+table tr td:last-child{border-right: none; }
+
+.bott{border-bottom: none; }
+
+</style>
+</html>

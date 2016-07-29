@@ -11,8 +11,13 @@
     font-style: normal;
 }
 
+body{background: url(bg.jpg) no-repeat;
+	background-size: cover;
+}
+
 .container{
-	width: 1215px;
+	max-width: 1215px;
+	min-width: 800px;
 	margin: 0 auto;	
 	font-family: helveticaneuecyr, arial, sans-serif;
 }
@@ -36,7 +41,7 @@
 	color: #63BBFF;
 	font-size: 14px;
 }
-.menu>ul>li:hover{background-color: #50ABD8;}
+.menu>ul>li:not(.other):hover{background-color: #50ABD8;}
 .menu>ul>li:hover a{color: #fff;}
 
 .other{
@@ -52,13 +57,15 @@
 .underline{
 	text-decoration: underline;
 }
-.other:hover{
+.other2{
 	background: linear-gradient(to top, #2D7CC1, #52AEDD);
+}
+.other2 a{
+	color: #fff;
 }
 
 
 main{
-	background: url(bg.jpg) no-repeat ;
 	height: 1028px;
 	padding-top: 215px;
 }
