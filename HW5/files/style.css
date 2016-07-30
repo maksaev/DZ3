@@ -16,7 +16,7 @@ body{background: url(bg.jpg) no-repeat;
 }
 
 .container{
-	max-width: 1215px;
+	max-width: 100%;
 	min-width: 800px;
 	margin: 0 auto;	
 	font-family: helveticaneuecyr, arial, sans-serif;
@@ -117,14 +117,13 @@ form label{
 }
 
 input:last-child{
-	background-color: #f00;
 	display: block;
 	margin: 16px auto;
+	padding: 6px 10px;
 	background: linear-gradient(to top, #2D7CC1, #52AEDD);
 	color: white;
 	border: 1px solid #4089C0;
 	border-radius: 3px;
-	padding: 6px 10px;
 	font-weight: bold;
 }
 
